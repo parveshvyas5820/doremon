@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .doremon{
+            /* background-image: url(dore.webp); */
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            
+        }
+        
+        
+        .head{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            border-radius: 90px;
+            position: absolute;
+            top: 320px;
+            left: 500px;
+            
+        }
+        .body{
+            background-color: blue;
+            width: 80px;
+            height: 90px;
+            position: absolute;
+            top: 70px;
+            left: 12px;
+        }
+.face{
+    background-color: rgb(255, 255, 255);
+            width: 90%;
+            height: 70px;
+            border-radius:90px;
+            position: absolute;
+            top: -55px;
+            left: 2px;
+            
+}
+.red{
+    background-color:red;
+    width: 80px;
+    height:10px;
+    position: absolute;
+    top: 8px;
+    z-index: 2;
+    
+}
+.eye{
+    background-color: rgb(255, 255, 255);
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    top:-65px;
+    left: 9px;
+   border-radius: 30px;
+    transform: rotate(140deg);
+    border: 2px solid black;
+}
+
+.eye1{
+    background-color: rgb(255, 255, 255);
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    top:-65px;
+    left: 35px;
+    
+   border-radius: 30px;
+    transform: rotate(40deg);
+    border: 2px solid black;
+}
+.eye2{
+    width: 2px;
+           height: 2px;
+           background-color: rgb(15, 14, 14);
+           position: absolute;
+           left: 20px;
+           top: -50px;
+           border-radius: 20px;
+           border: 2px solid rgb(8, 8, 8);
+       }
+       .eye3{
+    width: 2px;
+           height: 2px;
+           background-color: rgb(15, 14, 14);
+           position: absolute;
+           left: 40px;
+           top: -50px;
+           border-radius: 20px;
+           border: 2px solid black;
+       }
+.circel{
+    width: 6px;
+           height: 6px;
+           background-color: rgb(253, 0, 0);
+           position: absolute;
+           left: 30px;
+           top: -40px;
+           border-radius: 30px;
+           border: 2px solid black;
+
+}
+.hand{
+    width: 20px;
+           height: 50px;
+           background-color:blue;
+           position: absolute;
+           left: -29px;
+           top: 20px;
+           transform: rotate(75deg);
+}
+.hand2{
+            width: 20px;
+           height: 50px;
+           background-color: blue;
+           position: absolute;
+           left: 90px;
+           top: 20px;
+           transform: rotate(-75deg);
+    
+}
+.circel2{
+    width: 20px;
+           height: 20px;
+           background-color: rgb(252, 252, 252);
+           position: absolute;
+           left: -52px;
+           top: 40px;
+           border-radius: 30px;
+           border: 2px solid black;
+         
+
+}
+.circel3{
+    width: 20px;
+           height: 20px;
+           background-color: rgb(252, 252, 252);
+           position: absolute;
+           left: 110px;
+           top: 40px;
+           border-radius: 30px;
+           border: 2px solid black;}
+
+           .circel4{
+    width: 50px;
+           height: 50px;
+           background-color: rgb(252, 252, 252);
+           position: absolute;
+           left: 10px;
+           top: 11px;
+           border-radius: 30px;
+           border: 2px solid black;
+    }
+    .foot{
+        width: 30px;
+        height: 20px;
+        background-color: rgb(247, 247, 247);
+        position: absolute;
+        left: -4px;
+           top: 90px;
+    border-radius: 9px;
+           border: 2px solid black;
+
+    }
+    .foot2{
+        width: 30px;
+        height: 20px;
+        background-color: rgb(247, 247, 247);
+        position: absolute;
+        left: 50px;
+           top: 90px;
+    border-radius: 9px;
+           border: 2px solid black;
+    }
+        
+    .yellow{
+        width: 8px;
+           height: 8px;
+           background-color: rgb(238, 255, 4);
+           position: absolute;
+           left: 30px;
+           top: 18px;
+           border-radius: 30px;
+           border: 2px solid black;
+         
+
+    }
+    .line{
+        width: 2px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        top: -30px;
+        left: 34px;
+    }
+    .a{
+        width: 1px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        top: -35px;
+        left: 50px;
+        transform:rotate(50deg);
+    }
+
+    .b{
+        width: 1px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        top: -40px;
+        left: 47px;
+        transform:rotate(50deg);
+    }
+    .a1{
+        width: 1px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        top: -35px;
+        left: 15px;
+        transform:rotate(-50deg);
+    }
+
+    .b2{
+        width: 1px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        top: -40px;
+        left: 19px;
+        transform:rotate(-50deg);
+    }
+    .smile{
+        width: 30px;
+        height: 10px;
+        position: absolute;
+        background-color: red;
+        border-radius: 10px;
+        top: -6px;
+        left: 20px;
+
+
+    }
+    .gap{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border-radius: 12px;
+        background-color: white;
+        top: 85px;
+        left: 33px;
+    }
+    .pocket{
+        width: 40px;
+        height: 20px;
+        border-bottom-left-radius:50px;
+        border-bottom-right-radius:50px;
+        position: absolute;
+        background-color: rgb(252, 252, 252);
+        top: 35px;
+        left: 15px;
+        border: 2px solid black;
+
+
+    }
+    .c1{ width: 1px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        top: -30px;
+        left: 13px;
+        transform:rotate(-50deg);
+    }
+    .c2{
+        width: 1px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        top: -30px;
+        left: 53px;
+        transform:rotate(50deg);
+    }
+   .lineg{
+       width: 2px;
+       height: 10px;
+       background-color: yellow;
+       border: 2px solid black;
+       position: absolute;
+       top: 16px;
+       left: 33.5px;
+       transform:rotate(90deg);
+   }
+.lineg2{
+    width: 4px;
+    height: 4px;
+    background-color: yellow;
+    border-radius: 10px;
+    position: absolute;
+    top: 28px;
+    left: 33px;
+    border: 2px solid black;
+}
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="doremon">
+        <div class="head">
+            
+           
+            
+        <div class="body">
+            <div class="face"></div>
+            <div class="red"></div>
+            <div class="eye"></div>
+            <div class="eye1"></div>
+            <div class="eye2"></div>
+            <div class="eye3"></div>
+            <div class="circel"></div>
+            <div class="hand"></div>
+            <div class="hand2"></div>
+            <div class="circel2"></div>
+            <div class="circel3"></div>
+            <div class="circel4"></div>
+            <div class="foot"></div>
+            <div class="foot2"></div>
+            <div class="yellow"></div>
+            <div class="line"></div>
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="a1"></div>
+            <div class="b2"></div>
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="smile"></div>
+            <div class="gap"></div>
+            <div class="pocket"></div>
+            <div class="lineg"></div>
+            <div class="lineg2"></div>
+
+           
+            
+        </div>
+    </div>
+    </div>
+   
+
+    
+</body>
+</html>
